@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Users</title>
+    </head>
+    <h1>Add a User!</h1>
+    <body>
+        <form class="" action="/users" method="post">
+            <input type="text" name="name" placeholder="Name"><br>
+            <input type="text" name="age" placeholder="Age"><br>
+            <input type="submit" name="" value="Add user">
+        </form>
+
+    <% users.forEach(function (user) { %>
+        <h2><%= user.name %>, <%= user.age %></h2><hr>
+    <% }) %>
+    </body>
+</html>
